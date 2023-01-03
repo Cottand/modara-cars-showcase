@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Modara car showcase
+site_url: https://modara-cars.github.io/
+
+theme:
+  name: material
+  icon:
+    logo: material/car-multiple
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+
+plugins:
+  - search
