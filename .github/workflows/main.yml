@@ -1,9 +1,6 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy
 
-description: Builds pages and publishes them
-
-
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -38,7 +35,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      uses: jnanadarshan/mkdocs-build-action@v1
+      uses: jnanadarshan/mkdocs-build-action@0.2
 
     - name: Setup Pages
       uses: actions/configure-pages@v2
