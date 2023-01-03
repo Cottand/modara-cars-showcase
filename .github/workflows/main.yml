@@ -34,8 +34,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build
-      uses: jnanadarshan/mkdocs-build-action@0.2
+    - name: mkdocs build
+      run: |
+        pip install --quiet --no-cache-dir mkdocs
+        mkdocs build
+        echo "Built docs!"
 
     - name: Setup Pages
       uses: actions/configure-pages@v2
