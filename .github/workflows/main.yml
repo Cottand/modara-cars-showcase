@@ -36,7 +36,7 @@ jobs:
 
     - name: mkdocs build
       run: |
-        pip install --quiet --no-cache-dir mkdocs
+        pip install --quiet --no-cache-dir mkdocs mkdocs-material
         mkdocs build
         echo "Built docs!"
 
@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-pages-artifact@v1
       with:
         # Upload entire repository
-        path: '/site'
+        path: './site'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v1
